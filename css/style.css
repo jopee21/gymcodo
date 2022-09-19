@@ -442,3 +442,10 @@ body{
       */
   }
 }
+
+
+@media (max-width:400px){
+  .hero__title{
+    padding-top: 45px;
+  }
+}
