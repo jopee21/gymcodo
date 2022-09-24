@@ -449,3 +449,31 @@ body{
     padding-top: 45px;
   }
 }
+
+.sucursales{
+  display: flex;
+  flex-direction: column;
+}
+
+.sucursal{
+  display:  inline-flex;
+  padding-bottom: 2%;
+}
+
+.sucursal iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:50%;
+  position:relative;}
+
+.direccion{
+color: #ffffff; 
+font-size: 0.8rem;
+text-align: center; 
+padding: 1rem;
+background: #2091F9;
+border-radius: 35px 35px 35px 35px; 
+-moz-border-radius: 35px 35px 35px 35px; 
+-webkit-border-radius: 35px 35px 35px 35px; 
+border: 2px solid #395383;}
