@@ -2,14 +2,14 @@
     const titleTraining = [...document.querySelectorAll('.training__title')];
     console.log(titleTraining)
 
-    titleTraining.forEach(question =>{
-        question.addEventListener('click', ()=>{
+    titleTraining.forEach(training =>{
+        training.addEventListener('click', ()=>{
             let height = 0;
-            let answer = question.nextElementSibling;
-            let addPadding = question.parentElement.parentElement;
+            let answer = training.nextElementSibling;
+            let addPadding = training.parentElement.parentElement;
 
             addPadding.classList.toggle('training__padding--add');
-            question.children[0].classList.toggle('training__arrow--rotate');
+            training.children[0].classList.toggle('training__arrow--rotate');
 
             if(answer.clientHeight === 0){
                 height = answer.scrollHeight;

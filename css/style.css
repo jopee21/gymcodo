@@ -304,6 +304,7 @@ body{
 }
 
 .training__show{
+  overflow: hidden;
   text-align: left;
   height: 0;
   transition: height .3s;
