@@ -235,17 +235,6 @@ body{
   margin-bottom: .5em;
 }
 
-.form__cta{
-  font-family: inherit;
-  font-weight: 300;
-  font-size: 1rem;
-  background-color: #089FE0;
-  color: #fff;
-  border: none;
-  border-radius: -2em;
-  padding: .7em 0;
-  cursor: pointer;
-}
 
 /* Training */
 
