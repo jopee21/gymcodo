@@ -320,6 +320,62 @@ body{
   margin-bottom: 30px;
 }
 
+/* Testimony */
+
+.us{
+  background-color: #e5e5f7;
+}
+
+.us__container{
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  gap: 1em;
+  align-items: center;
+}
+
+.us__body{
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.us__body--show{
+  pointer-events: unset;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.us__img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.us__texts{
+  max-width: 700px;
+}
+
+.us__course{
+  background-color: royalblue;
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+}
+
+.us__arrow{
+  width: 90%;
+  cursor: pointer;
+}
+
 /* Footer */
 
 .footer{
@@ -473,11 +529,11 @@ body{
       justify-self: center;
   }
 
-  .testimony__container{
+  .us__container{
       grid-template-columns: 30px 1fr 30px;
   }
 
-  .testimony__body{
+  .us__body{
       grid-template-columns: 1fr;
       grid-template-rows: max-content max-content;
       gap: 3em;
@@ -485,7 +541,7 @@ body{
   }
 
 
-  .testimony__img{
+  .us__img{
       width: 200px;
       height: 200px;
       
@@ -533,20 +589,20 @@ body{
   .subtitle{
       font-size: 1.8rem;
   }
-  .testimony{
+  .us{
       --padding-container: 60px 0;
   }
 
-  .testimony__container{
+  .us__container{
       grid-template-columns: 28px 1fr 28px;
       gap: .9em;
   }
 
-  .testimony__arrow{
+  .us__arrow{
       width: 100%;
   }
 
-  .testimony__course{
+  .us__course{
       margin-top: 15px;
   }
 
