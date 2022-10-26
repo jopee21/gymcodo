@@ -69,3 +69,32 @@
     }
 
 })();
+
+
+async function getPlayer(){
+    function exito() {
+        var datos = JSON.parse(this.responseText); //convertir a JSON
+        document.getElementById('player_name').innerHTML = datos.player[0].strPlayer
+        document.getElementById('player_team').innerHTML = datos.player[0].strTeam
+        document.getElementById('player_description').innerHTML = datos.player[0].strDescriptionEN
+        document.getElementById('player_img').src = datos.player[0].strThumb
+    }
+    
+    // funcion para la llamada fallida
+    function error(err) {
+        console.log('Solicitud fallida', err); //los detalles en el objecto "err"
+    }
+    let jugador = document.getElementById('player').value;
+    console.log(jugador.replace(" ","_"))
+    let request = 'https://www.thesportsdb.com/api/v1/json/2/searchplayers.php?p='+jugador.replace(" ","_");
+    console.log(request)
+    
+    var xhr = new XMLHttpRequest(); //invocar nueva instancia de XMLHttpRequest
+    xhr.onload = exito; // llamar a la funcion exito si exitosa
+    xhr.onerror = error;  // llamar a la funcion error si fallida
+    xhr.open('GET', request); // Abrir solicitud GET
+    xhr.send(); // mandar la solicitud al servidor.
+
+
+    
+}

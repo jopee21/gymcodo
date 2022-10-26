@@ -125,6 +125,25 @@
         </div>
     </section>
 
+    <section>
+        <div class="us__container container">
+            <section class="us__body us__body--show" data-id="1">
+                <div class="us__texts">
+                    <h2 class="subtitle"><span id="player_name">Escribi el nombre de un jugador de la seleccion y traemos su informacion gracias a TheSportsDB</span> <span class="us__course" id="player_team"></span></h2>
+                    <p class="us__review" id="player_description" style="white-space:nowrap;
+                    overflow:hidden;
+                    text-overflow:ellipsis;">.</p>
+                </div>
+
+                <figure class="us__picture">
+                    <img src="./Images/logosportsdb.png" id="player_img" class="us__img">
+                </figure>
+                <input type="text" class="form__input" placeholder="¡Escribi Aqui!" id="player">
+                <input onclick="getPlayer()" type="submit" value="Buscar Jugador" class="cta">
+            </section>
+        </div>
+    </section>
+
     <footer class="footer">
         <section class="footer__container container">
             <nav class="nav nav--footer">
