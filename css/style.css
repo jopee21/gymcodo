@@ -12,7 +12,7 @@ body{
 .container{
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50 auto;
   overflow: hidden;
   padding: var(--padding-container);
 }
@@ -117,6 +117,7 @@ body{
   text-decoration: none;
   padding: 13px 30px;
   border-radius: 32px;
+  margin-left: -50px;
 }
 
 /* About */
@@ -197,6 +198,7 @@ body{
   border: none;
   border: 1px solid #bbb0b0;
   border-radius: 0.2em;
+  margin-left: -50px;
 }
 
 .form__input--message{
@@ -282,11 +284,11 @@ body{
 /* Testimony */
 
 .us{
-  display: grid;
   background-color: #e5e5f7;
 }
 
 .us__container{
+  display: grid;
   grid-template-columns: 50px 1fr 50px;
   gap: 1em;
   align-items: center;
@@ -333,6 +335,10 @@ body{
 .us__arrow{
   width: 90%;
   cursor: pointer;
+}
+
+.us__review{
+ margin-right: -50px;
 }
 
 /* Footer */
@@ -493,7 +499,7 @@ body{
   .us__img{
       width: 200px;
       height: 200px;
-      
+
   }
 
   .training__copy{
@@ -536,10 +542,21 @@ body{
   }
 
   .subtitle{
-      font-size: 1.8rem;
+      font-size: 1.3rem;
   }
+
+  #player_name{
+    font-size: 1.3rem;
+    display: grid;
+    margin-left: -35px;
+  }
+
+  #player_img{
+    margin-left: -40px;
+  }
+
   .us{
-      --padding-container: 60px 0;
+      --padding-container: 60px 0px;
   }
 
   .us__container{
@@ -585,9 +602,9 @@ body{
   .footer__submit{
       margin-right: auto;
       margin-left: 0;
-      
 
-      /* 
+
+      /*
       margin:0;
       width: 100%;
       */
@@ -619,12 +636,12 @@ body{
   position:relative;}
 
 .direccion{
-color: #ffffff; 
+color: #ffffff;
 font-size: 0.8rem;
-text-align: center; 
+text-align: center;
 padding: 1rem;
 background: #2091F9;
-border-radius: 35px 35px 35px 35px; 
--moz-border-radius: 35px 35px 35px 35px; 
--webkit-border-radius: 35px 35px 35px 35px; 
+border-radius: 35px 35px 35px 35px;
+-moz-border-radius: 35px 35px 35px 35px;
+-webkit-border-radius: 35px 35px 35px 35px;
 border: 2px solid #395383;}
